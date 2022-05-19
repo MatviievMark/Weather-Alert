@@ -2,7 +2,9 @@ import requests as requests
 from sendEmail import sendEmail
 import os
 
-api_key = '67d1f04622a29e80c77f06801ce74415'
+#api key will not work unless you use your own key 
+#you can get it over here --> openweathermap.org
+api_key = 'YOUR KEY'
 
 
 # Jackson Mississippi
