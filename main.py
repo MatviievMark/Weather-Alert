@@ -1,19 +1,19 @@
 import requests as requests
 from sendEmail import sendEmail
-import os
+
 
 #api key will not work unless you use your own key 
 #you can get it over here --> openweathermap.org
+
+#as well you have to enter your own credentials in the email/reciever/password section down below
 api_key = 'YOUR KEY'
 
 
-# Jackson Mississippi
+# Jackson Mississippi// city where you are checking
 lat = 32.29876
 lon = -90.18481
 
-# test somewhere when it was raining
-# lat = 4.091354
-# lon = -72.955918
+
 units = "metric"
 exclude = "current,minutely,daily"
 api_url =\
@@ -34,10 +34,10 @@ for hours in weather_slice:
     if int(weather_data) < 700:
         will_rain = True
 
-myEmail = "mark.mason2025@gmail.com"
-toEmail = "mark23902390@gmail.com"
+myEmail = "YOUR EMAIL"
+toEmail = "REVIEVER EMAIL"
 
-myPassword = "Zer0.Chance"
+myPassword = "YOUR EMAIL PASSWORD"
 
 email_subject = "Weather alert"
 email_message = "It will rain!!!"
